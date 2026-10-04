@@ -1,0 +1,23 @@
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Keep the meeting transcript out of the public repository until we decide otherwise.
+text.md
+
+# Source workbooks stay local; they contain private commercial/prospect data.
+*.xlsx
+*.xls
+*.csv
+
+# Staged normalized exports also contain private prospect data.
+data/
+
+# Local dependencies and build output
+node_modules/
+__pycache__/
+.next/
+dist/
+build/
+coverage/
